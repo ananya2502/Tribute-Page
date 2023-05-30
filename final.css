@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #8fa59d;
+  }
+header h2{
+  font-size: 1.6rem;
+  color: aliceblue;
+}
+header .column{ display: flex;
+  align-items: center;
+}
+header .column span{
+  font-weight: 500;
+  margin-left: 15px; 
+  font-size: 1.19rem ;
+}
+.volume-slider input{
+    outline: none ;
+  accent-color: white;
+}
+.key-checkbox input{
+  width: 60px;
+  height: 30px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 3 0px;
+  appearance: none;
+  background: #4b4b4b;
+}
+.key-checkbox input::before{
+  content: "";
+  height: 20px;
+  width: 20px;
+  top: 50%;
+  left: 5px;
+  border-radius: inherit;
+  position: absolute;
+  background: #8c8c8c;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.key-checkbox input:checked::before{
+  left: 35px;
+  background: #fff;
+} 
+.piano-keys{
+    display: flex;
+    margin-top:40px;
+}
+.piano-keys .key{
+    cursor: pointer;
+    user-select: none;
+    list-style: none;
+    color: #a2a2a2;
+    position: relative;
+    text-transform: uppercase;
+    
+   }
+  .piano-keys .black{
+    width: 44px;
+    height: 144px;
+    z-index: 2;
+    margin: 0 -22px 0 -22px;
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(#000, #000) ;
+  }
+  .piano-keys .black:active{
+    box-shadow: inset -5px 5px 10px rgba(231, 191, 191, 0.1);
+    background: linear-gradient(to bottom, #deddddf7, #f9f9f9f1) ;
+  }
+  .piano-keys .white{
+    width: 70px;
+    height: 230px;
+    border-radius: 8px;
+    border: 1px solid black;
+    background: linear-gradient(#ffffff 100%, #ffffff 0%) ;
+
+  }
+  .piano-keys .white:active{
+    box-shadow: inset -5px 5px 20px rgba(0,0,0,0.2);
+    background: linear-gradient(to bottom, #fff, #eee) ;
+  }
+  .piano-keys span{
+    position: absolute;
+    bottom: 10%;
+    width: 90%;
+    font-size: 1.13rem;
+    text-align: center ;
+  }
+  a{text-decoration: none;color: #4b4b4b;}
+h1
